@@ -1,3 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
 :root {
   --default-blue: blue;
 }

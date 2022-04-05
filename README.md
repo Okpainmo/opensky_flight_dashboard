@@ -9,7 +9,7 @@ This project is an OpenSky flight information dashboard project. It is a React J
 ## Project site
 
 This project is hosted live on netlify. Click on the link below to see it live.
-https://myopensky.netlify.app
+https://my-opensky-project.netlify.app
 
 ## Project Stack/Build Tools
 
