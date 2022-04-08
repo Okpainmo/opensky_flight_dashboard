@@ -1,3 +1,8 @@
+:root {
+  --custom-blue: blue;
+  --custom-grey: grey;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +22,32 @@
   font-weight: bold;
 }
 
-:root {
-  --default-blue: blue;
+.admin-login-wrapper {
+  background-image: url(../../images/flight.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  padding-top: 120px;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+}
+.admin-login-wrapper .login-card {
+  width: 350px;
+  border-radius: 7px;
+  background-color: white;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.admin-login-wrapper .login-card input {
+  padding: 7px;
+}
+.admin-login-wrapper .login-card button {
+  padding: 7px 15px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 390px) {
+  .admin-login-wrapper .login-card {
+    width: 100%;
+    padding: 0 !important;
+  }
 }

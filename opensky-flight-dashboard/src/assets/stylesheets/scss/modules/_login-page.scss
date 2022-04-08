@@ -1,0 +1,30 @@
+@use '../modules/mixins' as mix;
+
+.admin-login-wrapper {
+  background-image: url(../../images/flight.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  padding-top: 120px;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  .login-card {
+    @include mix.plain-card(7px, 350px);
+    margin: 0 auto;
+    input {
+      padding: 7px;
+    }
+    button {
+      padding: 7px 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .admin-login-wrapper {
+    .login-card {
+      width: 100%;
+      padding: 0 !important;
+    }
+  }
+}

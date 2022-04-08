@@ -17,6 +17,8 @@ https://my-opensky-project.netlify.app
 2. SCSS
 3. Bootstrap 5
 4. Gulp.Js (for compiling SCSS)
+5. Bootstrap icons
+6. Google fonts
 
 ## Project screenshot.
 

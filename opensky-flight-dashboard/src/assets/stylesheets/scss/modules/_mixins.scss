@@ -1,0 +1,6 @@
+@mixin plain-card($custom-br, $custom-width) {
+  width: $custom-width;
+  border-radius: $custom-br;
+  background-color: white;
+  min-height: 200px;
+}
