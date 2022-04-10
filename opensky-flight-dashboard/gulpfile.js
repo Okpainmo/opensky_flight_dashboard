@@ -11,7 +11,7 @@ gulp.task('hello', function (done) {
   done();
 });
 
-// sass task
+// SCSS compilation task
 function buildStyles() {
   return gulp
     .src('src/assets/stylesheets/scss/**/*.scss')

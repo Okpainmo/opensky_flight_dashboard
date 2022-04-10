@@ -1,0 +1,68 @@
+// main dashboard media-queries
+
+@media screen and (max-width: 768px) {
+  .flight-dashboard {
+    max-width: 100%;
+    padding: 0 !important;
+    .dashboard-content-wrapper {
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .flight-dashboard {
+    .dashboard-header {
+      padding: 15px 10px !important;
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .dashboard-item-headings {
+      margin: 0 !important;
+      ul {
+        padding: 7px !important;
+        margin: 0;
+      }
+    }
+    .dashboard-item {
+      padding: 7px !important;
+      .item {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .flight-dashboard {
+    .dashboard-item-headings {
+      ul li {
+        font-size: 12px;
+      }
+    }
+    .dashboard-item {
+      .item {
+        font-size: 12px;
+      }
+      .airport-name-wrapper {
+        font-size: 12px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+// login page media-queries
+
+@media screen and (max-width: 390px) {
+  .admin-login-wrapper {
+    .login-card {
+      width: 100%;
+      padding: 0 !important;
+    }
+  }
+}

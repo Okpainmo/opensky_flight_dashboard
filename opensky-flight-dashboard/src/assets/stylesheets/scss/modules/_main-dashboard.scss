@@ -1,1 +1,42 @@
+@use '../modules/mixins' as mix;
 
+.dashboard-content-wrapper {
+  color: var(--dashboard-text-clr);
+  @include mix.plain-card(15px, 100%);
+  .dashboard-header {
+    color: white;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-color: var(--custom-purple);
+  }
+  .dashboard-item-headings {
+    ul {
+      li {
+        display: inline-block;
+        list-style-type: none;
+        font-weight: bold;
+        width: 23%;
+        font-size: 17px;
+      }
+      li:first-child {
+        width: 30%;
+      }
+    }
+  }
+  .dashboard-item {
+    .airport-name-wrapper {
+      width: 30%;
+    }
+    .item {
+      width: 22.5%;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+    }
+  }
+  .dashboard-item:nth-child(even) {
+    background-color: #f1efef;
+  }
+}

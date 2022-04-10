@@ -1,6 +1,6 @@
 :root {
-  --custom-blue: blue;
-  --custom-grey: grey;
+  --custom-purple: #262662;
+  --dashboard-text-clr: #42576b;
 }
 
 * {
@@ -24,18 +24,20 @@
 
 .admin-login-wrapper {
   background-image: url(../../images/flight.jpg);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.92);
+  background-blend-mode: overlay;
   background-size: cover;
   padding-top: 120px;
-  background-blend-mode: overlay;
   min-height: 100vh;
 }
 .admin-login-wrapper .login-card {
   width: 350px;
   border-radius: 7px;
   background-color: white;
-  min-height: 200px;
   margin: 0 auto;
+}
+.admin-login-wrapper .login-card h3 {
+  color: var(--custom-purple);
 }
 .admin-login-wrapper .login-card input {
   padding: 7px;
@@ -43,8 +45,96 @@
 .admin-login-wrapper .login-card button {
   padding: 7px 15px;
   font-size: 16px;
+  background-color: var(--custom-purple);
+  border-color: var(--custom-purple);
+}
+.admin-login-wrapper .login-card button:hover {
+  transform: scale(1.04);
+  transition: transform 0.75s ease;
 }
 
+.dashboard-content-wrapper {
+  color: var(--dashboard-text-clr);
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+}
+.dashboard-content-wrapper .dashboard-header {
+  color: white;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: var(--custom-purple);
+}
+.dashboard-content-wrapper .dashboard-item-headings ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: bold;
+  width: 23%;
+  font-size: 17px;
+}
+.dashboard-content-wrapper .dashboard-item-headings ul li:first-child {
+  width: 30%;
+}
+.dashboard-content-wrapper .dashboard-item .airport-name-wrapper {
+  width: 30%;
+}
+.dashboard-content-wrapper .dashboard-item .item {
+  width: 22.5%;
+}
+.dashboard-content-wrapper .dashboard-item img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.dashboard-content-wrapper .dashboard-item:nth-child(even) {
+  background-color: #f1efef;
+}
+
+@media screen and (max-width: 768px) {
+  .flight-dashboard {
+    max-width: 100%;
+    padding: 0 !important;
+  }
+  .flight-dashboard .dashboard-content-wrapper {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .flight-dashboard .dashboard-header {
+    padding: 15px 10px !important;
+  }
+  .flight-dashboard .dashboard-header h3 {
+    font-size: 20px;
+  }
+  .flight-dashboard .dashboard-item-headings {
+    margin: 0 !important;
+  }
+  .flight-dashboard .dashboard-item-headings ul {
+    padding: 7px !important;
+    margin: 0;
+  }
+  .flight-dashboard .dashboard-item {
+    padding: 7px !important;
+  }
+  .flight-dashboard .dashboard-item .item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .flight-dashboard .dashboard-item-headings ul li {
+    font-size: 12px;
+  }
+  .flight-dashboard .dashboard-item .item {
+    font-size: 12px;
+  }
+  .flight-dashboard .dashboard-item .airport-name-wrapper {
+    font-size: 12px;
+  }
+  .flight-dashboard .dashboard-item .airport-name-wrapper img {
+    width: 25px;
+    height: 25px;
+  }
+}
 @media screen and (max-width: 390px) {
   .admin-login-wrapper .login-card {
     width: 100%;

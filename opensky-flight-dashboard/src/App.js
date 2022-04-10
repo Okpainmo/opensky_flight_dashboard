@@ -9,7 +9,7 @@ function App() {
     <ScrollHandler>
       <Routes>
         <Route path="/" element={<AdminLogin />} />
-        <Route path="/dashboard" element={<MainDashboard />} />
+        <Route path="/flight-dashboard" element={<MainDashboard />} />
       </Routes>
     </ScrollHandler>
   );
