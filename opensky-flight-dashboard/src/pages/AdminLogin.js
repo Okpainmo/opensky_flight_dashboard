@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/stylesheets/css/main.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function AdminLogin() {
   const [loginCredentials, setLoginCredential] = useState({
@@ -87,6 +88,7 @@ function AdminLogin() {
               >
                 Log in
               </button>
+              <Link to="flight-dashboard">Go to dashboard</Link>
             </form>
           </section>
         </div>
