@@ -1,27 +1,13 @@
 import React from 'react';
 import '../assets/stylesheets/css/main.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function AdminLogin() {
   const [loginCredentials, setLoginCredential] = useState({
     adminUsername: '',
     adminPassword: '',
   });
-
-  const [showAlert, setShowAlert] = useState(false);
-
-  // show invalid username or password warning
-
-  function showWarning() {
-    setShowAlert(true);
-  }
-
-  // remove invalid username or password warning
-
-  function removeWarning() {
-    setShowAlert(false);
-  }
 
   function handleChange(e) {
     const name = e.target.name;
@@ -30,14 +16,33 @@ function AdminLogin() {
     setLoginCredential({ ...loginCredentials, [name]: value });
   }
 
+  const [showAlert, setShowAlert] = useState(false);
+
+  // remove invalid username or password warning
+
+  function removeWarning() {
+    setShowAlert(false);
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
 
     // form validation
-    // if (loginCredentials == { adminUsername: "hamoye", adminPassword: "426693" }) {
-    //           window.location.replace('');
-    // }
-    console.log(loginCredentials);
+
+    const stringPassword = loginCredentials.adminPassword;
+    const realPassword = parseInt(stringPassword);
+
+    if (
+      loginCredentials.adminUsername === 'hamoye' &&
+      realPassword === 426693
+    ) {
+      window.location.replace(
+        'https://my-opensky-project.netlify.app/flight-dashboard'
+      );
+    } else {
+      setShowAlert(true);
+      console.log(loginCredentials);
+    }
   }
 
   return (
@@ -57,7 +62,9 @@ function AdminLogin() {
           <section className="card-body nunito text-center">
             <form className="form-wrapper" onSubmit={handleSubmit}>
               {showAlert && (
-                <p style={{ color: 'red' }}>Invalid username or password</p>
+                <p style={{ color: 'red', fontSize: '13px' }}>
+                  Invalid username or password
+                </p>
               )}
               <input
                 className="form-control rounded-0 border-end-0 border-top-0 border-start-0"
@@ -84,11 +91,10 @@ function AdminLogin() {
               <button
                 type="submit"
                 className="btn btn-primary w-100 mb-5 shadow"
-                onClick={showWarning}
               >
                 Log in
               </button>
-              <Link to="flight-dashboard">Go to dashboard</Link>
+              {/* <Link to="flight-dashboard">Go to dashboard</Link> */}
             </form>
           </section>
         </div>
