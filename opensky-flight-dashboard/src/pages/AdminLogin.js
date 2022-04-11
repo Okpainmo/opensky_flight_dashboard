@@ -1,9 +1,11 @@
 import React from 'react';
 import '../assets/stylesheets/css/main.css';
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function AdminLogin() {
+  const navigate = useNavigate();
+
   const [loginCredentials, setLoginCredential] = useState({
     adminUsername: '',
     adminPassword: '',
@@ -27,7 +29,7 @@ function AdminLogin() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // form validation
+    // form validation and redirection to flight dashboard
 
     const stringPassword = loginCredentials.adminPassword;
     const realPassword = parseInt(stringPassword);
@@ -36,9 +38,7 @@ function AdminLogin() {
       loginCredentials.adminUsername === 'hamoye' &&
       realPassword === 426693
     ) {
-      window.location.replace(
-        'https://my-opensky-project.netlify.app/flight-dashboard'
-      );
+      navigate('/flight-dashboard');
     } else {
       setShowAlert(true);
       console.log(loginCredentials);
