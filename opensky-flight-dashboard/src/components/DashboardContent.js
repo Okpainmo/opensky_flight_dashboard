@@ -8,7 +8,7 @@ function DashboardContent({ data }) {
         <h3 className="open-sans-bold">OpenSky Flight Dashboard</h3>
         <p className="m-0">List of airports and flight details</p>
         <p className="m-0">Flight assessment period : 12PM - 1PM</p>
-        <p>Flight assessment date : 25th January 2018</p>
+        <p>Flight assessment date : 29th January 2018</p>
       </div>
       <div className="dashboard-item-headings mt-3">
         <ul className="d-flex justify-content-between px-4">
