@@ -24,9 +24,9 @@ function MainDashboard() {
   useEffect(() => {
     getAirports();
     if (data.length === 0) {
-      setDashboardContentLoading(true);
-    } else {
       setDashboardContentLoading(false);
+    } else {
+      setDashboardContentLoading(true);
     }
   }, [data.length]);
 
