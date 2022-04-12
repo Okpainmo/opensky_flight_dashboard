@@ -69,14 +69,11 @@
   display: inline-block;
   list-style-type: none;
   font-weight: bold;
-  width: 23%;
+  width: 22.5%;
   font-size: 17px;
 }
-.dashboard-content-wrapper .dashboard-item-headings ul li:first-child {
-  width: 30%;
-}
 .dashboard-content-wrapper .dashboard-item .airport-name-wrapper {
-  width: 30%;
+  width: 22.5%;
 }
 .dashboard-content-wrapper .dashboard-item .item {
   width: 22.5%;
@@ -139,5 +136,27 @@
   .admin-login-wrapper .login-card {
     width: 100%;
     padding: 0 !important;
+  }
+
+  .preloader {
+    font-size: 20px;
+  }
+}
+.preloader {
+  width: 100%;
+  margin: 30vh auto 0;
+  padding: 15px;
+  font-size: 25px;
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes animate {
+  from {
+    color: transparent;
+  }
+  to {
+    color: var(--custom-purple);
   }
 }

@@ -94,7 +94,6 @@ function AdminLogin() {
               >
                 Log in
               </button>
-              {/* <Link to="flight-dashboard">Go to dashboard</Link> */}
             </form>
           </section>
         </div>

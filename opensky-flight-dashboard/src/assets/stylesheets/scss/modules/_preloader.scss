@@ -1,0 +1,19 @@
+.preloader {
+  @keyframes animate {
+    from {
+      color: transparent;
+    }
+    to {
+      color: var(--custom-purple);
+    }
+  }
+
+  width: 100%;
+  margin: 30vh auto 0;
+  padding: 15px;
+  font-size: 25px;
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
