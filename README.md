@@ -20,6 +20,13 @@ https://my-opensky-project.netlify.app
 5. Google fonts
 6. OpenSky flight-related APIs.
 
+## Dashboard login credentioals.
+
+The project consist of an admin login through which you can gain access to the main flight dashboard. 
+Here are the login credentials for to gain access.
+1. Username: hamoye (case sensitive)
+2. password: 426693
+
 ## Some screenshots from the project.
 
 ![Project screenshot](./opensky-flight-dashboard/src/assets/images/admin-login.png)
