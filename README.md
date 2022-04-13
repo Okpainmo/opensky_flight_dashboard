@@ -23,7 +23,7 @@ https://my-opensky-project.netlify.app
 ## Dashboard login credentioals.
 
 The project consist of an admin login through which you can gain access to the main flight dashboard. 
-Here are the login credentials for to gain access.
+Here are the login credentials to gain access.
 1. Username: hamoye (case sensitive)
 2. password: 426693
 
