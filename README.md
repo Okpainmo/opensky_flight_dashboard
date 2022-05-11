@@ -11,6 +11,14 @@ This project is a flight information dashboard project built using OpenSky APIs.
 This project is hosted live on netlify. Click on the link below to see it live.
 https://my-opensky-project.netlify.app
 
+## Dashboard login credentioals.
+
+The project consist of an admin login through which you can gain access to the main flight dashboard.
+Here are the login credentials to gain access.
+
+1. Username: hamoye (case sensitive)
+2. password: 426693
+
 ## Project stack/Build tools
 
 1. React JS
@@ -19,13 +27,6 @@ https://my-opensky-project.netlify.app
 4. Gulp.Js (for compiling SCSS)
 5. Google fonts
 6. OpenSky flight-related APIs.
-
-## Dashboard login credentioals.
-
-The project consist of an admin login through which you can gain access to the main flight dashboard. 
-Here are the login credentials to gain access.
-1. Username: hamoye (case sensitive)
-2. password: 426693
 
 ## Some screenshots from the project.
 
@@ -57,7 +58,7 @@ Here are the login credentials to gain access.
       2. Add collection of all available airports (airport codes) to the airports column on dashboard.
       3. Use the unique/individual airport codes to automate API link and get all arriving flights for each airport.
 
-        e.g  const arrivalsUrl = `https://opensky-network.org/api/flights/arrival?airport=$		{each.estArrivalAirport}&begin=1517227200&end=1517230800`;
+        e.g  const arrivalsUrl = `https://opensky-network.org/api/flights/arrival?airport=${each.estArrivalAirport}&begin=1517227200&end=1517230800`;
 
         {each.estArrivalAirport} = unique airport code
 
