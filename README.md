@@ -1,6 +1,6 @@
 # About opensky_flight_dashboard
 
-This project is a flight information dashboard project built using OpenSky flight API. 
+This project is a flight information dashboard project built using OpenSky flight APIs. 
 > It is built with React JS and other cool front end web development tools. See the complete build-tools list below.
 
 ## Project site
