@@ -5,7 +5,7 @@ This project is a flight information dashboard project built using OpenSky fligh
 
 ## Project site
 
-This project is hosted live on netlify. Click on the link below to see it live.
+This project is hosted live on netlify. Follow this link to see it live.
 https://my-opensky-project.netlify.app
 
 ## Project stack/Build tools
