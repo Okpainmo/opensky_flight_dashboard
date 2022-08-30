@@ -17,7 +17,7 @@ https://my-opensky-project.netlify.app
 5. Google fonts
 6. OpenSky flight-related APIs.
 
-## Some screenshots from the project.
+## Project Screenshots.
 
 ![Project screenshot](./opensky-flight-dashboard/src/assets/images/admin-login.png)
 ![Project screenshot](./opensky-flight-dashboard/src/assets/images/admin-login-mobile.png)
